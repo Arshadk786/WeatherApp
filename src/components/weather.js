@@ -6,8 +6,11 @@ import moment from 'moment';
 function Weather({weatherData}){
   return(
     <Card>
-    <Card.Content>
-        <Card.Header className="header">Division : {weatherData.name}</Card.Header>
+      <div className="search">
+        <p><input type="text" name="search" id="" /> <button type="submit">Search</button></p>
+      </div>
+      <Card.Header className="header">{weatherData.name}</Card.Header>
+      <Card.Content className="cardContent">
         <p>Country : {weatherData.sys.country}</p>
         <p>Weather : {weatherData.weather[0].main}</p>
         <p>Temperature : {weatherData.main.temp}&deg;C</p>
@@ -17,7 +20,7 @@ function Weather({weatherData}){
         <p>Wind : {weatherData.wind.speed}</p>
         <p>Day : {moment().format('dddd')}</p>
         <p>Date : {moment().format('LL')}</p>
-    </Card.Content>
+      </Card.Content>
     </Card>
   );
 }

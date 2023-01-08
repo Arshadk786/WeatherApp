@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,500,600|DM+Sans:700");
+
+
+:root{
+    --font-family-poppins: "Poppins";
+}
+
+body{
+    box-sizing: border-box;
+    margin: 30px;
+}
+
+.cardContent{
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #7A80EF;
+    background: -webkit-linear-gradient(top left, #7A80EF, #26C7C5);
+    background: -moz-linear-gradient(top left, #7A80EF, #26C7C5);
+    background: linear-gradient(to bottom right, #7A80EF, #26C7C5);
+    font-family: var(--font-family-poppins);
+    font-weight: 500;
+    color: white;
+    padding: 35px 0px;
+    border-radius: 0 0 20px 20px;
+}
+
+.card p{
+    margin: 0px;
+    padding: 5px;
+}
+
+.header{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    background: #110D70;
+    background: -webkit-linear-gradient(top left, #110D70, #3951A8);
+    background: -moz-linear-gradient(top left, #110D70, #3951A8);
+    background: linear-gradient(to bottom right, #110D70, #3951A8);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font-family-poppins);
+}
